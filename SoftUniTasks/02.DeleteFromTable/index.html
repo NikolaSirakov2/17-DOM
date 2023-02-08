@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./index.js"></script>
     <title>Document</title>
-</head>
-<body>
-    
-    <table border="1" style="color:coral" id="customers">
-        <tr><th>Name</th><th>Email</th></tr>
-        <tr><th>Nik</th><th>test@abv.bg</th></tr>
-        <tr><th>Nik</th><th>test1@abv.bg</th></tr>
-        <tr><th>Nik</th><th>test2@abv.bg</th></tr>
-        <tr><th>Nik</th><th>test3@abv.bg</th></tr>
+  </head>
+  <body>
+    <table border="1" style="color: coral" id="customers">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <th>Nik</th>
+        <th>test@abv.bg</th>
+      </tr>
+      <tr>
+        <th>Nik</th>
+        <th>test1@abv.bg</th>
+      </tr>
+      <tr>
+        <th>Nik</th>
+        <th>test2@abv.bg</th>
+      </tr>
+      <tr>
+        <th>Nik</th>
+        <th>test3@abv.bg</th>
+      </tr>
     </table>
 
-    Email: <input type="text" name="email">
+    Email: <input type="text" name="email" />
     <button onclick="deleteByEmail()">Delete</button>
     <div id="result"></div>
 
-    <!-- <script>
-        function deleteByEmail() {
+    <script>
+      function deleteByEmail() {
+        let email = document.getElementsByName("email")[0].value;
 
-let email = document.getElementsByName('email')[0].value;
-
-console.log(email);
-
-}
-    </script> -->
-</body>
+        let tableCells = document.getElementsByTagName('th');
+        let result = document.getElementById('result');
+        
+        for (let cell of tableCells) {
+            if(cell.textContent === email){
+                cell.parentElement.remove();
+                result.textContent = "Deleted";
+                break;
+            } else {
+                result.textContent = "Error"
+            }
+        }
+      }
+    </script>
+  </body>
 </html>

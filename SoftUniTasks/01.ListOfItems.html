@@ -15,8 +15,10 @@
     </ul>
     <input type="text" id="newItemText">
     <input type="button" value="Add" onclick="addItems()">
+    <input type="button" value="Remove" onclick="deleteItems()">
     <script>
         let list = document.getElementById('items');
+        
 
         function addItems() {
             
@@ -29,6 +31,12 @@
             list.appendChild(liItem);
 
             newItem.value = "";
+        }
+
+        function deleteItems() {
+            let newItem = document.getElementById('newItemText');
+
+
         }
     </script>
 </body>

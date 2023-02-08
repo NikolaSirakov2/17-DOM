@@ -1,38 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
     <title>Test Form</title>
     <style>
-        body {
-            background-color:  rgb(78, 160, 161);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+      @font-face {
+        font-family: "Roboto";
+        src: url(./font/RobotoRegular-3m4L.ttf);
+      }
 
-        main {
-            display: flex;
-            background-color: rgb(248, 247, 245);
-            margin-left: 750px;
-            margin-top: 40px;
-            width: 500px;
-            height: 900px;
-            justify-content: center;
-        }
+      body {
+        background-color: rgb(78, 160, 161);
+        font-family: "Roboto";
+      }
 
-        h1{
-            font-size: 40px;
-            position: relative;
-            top: 10px
-        }
+      main {
+        position: relative;
+        display: flex;
+        background-color: #eee;
+        margin-left: 750px;
+        margin-top: 40px;
+        width: 500px;
+        height: 900px;
+        justify-content: center;
+        border: 0.5px;
+        border-radius: 1%;
+      }
+
+      h1 {
+        font-size: 30px;
+        position: absolute;
+        left: 180px;
+        top: 60px;
+        font-weight: 900;
+      }
+
+      .enter {
+        position: absolute;
+        top: 120px;
+        right: 40px;
+      }
+
+      .enter li {
+        margin: 20px 0px;
+      }
+
+      .enter h3 {
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .enter input {
+        height: 30px;
+        width: 430px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #eee;
+        border-color: rgb(246, 236, 236);
+      }
+
+      .age {
+        position: absolute;
+        top: 400px;
+        left: 30px;
+      }
+
+      .age h2 {
+        font-weight: 700;
+      }
+
+      .age input {
+        position: relative;
+        right: 2px;
+        top: 10px;
+      }
+
+      .age label {
+        position: relative;
+        top: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1>Test Form</h1>
+      <h1>Test Form</h1>
+
+      <ul class="enter">
+        <li>
+          <h3>Full Name</h3>
+          <input type="text" value="Enter Your Full Name" />
+        </li>
+        <li>
+          <h3>Email</h3>
+          <input type="text" value="Enter Your Email" />
+        </li>
+        <li>
+          <h3>Phone Number</h3>
+          <input type="text" value="Enter Your Phone Number" />
+        </li>
+      </ul>
+
+      <div class="age">
+        <h2>Age</h2>
+        <input type="radio" id="age1" name="age" value="18" />
+        <label for="age1"> > 18</label><br />
+        <input type="radio" id="age2" name="age" value="35" />
+        <label for="age2">18-35</label><br />
+        <input type="radio" id="age3" name="age" value="100" />
+        <label for="age3">35+</label>
+      </div>
+
+      <div class="education">
+        <h2>Education</h2>
+        <input type="radio" id="edu1" name="education" value="High School" />
+        <label for="edu1">High School</label><br />
+        <input type="radio" id="edu2" name="education" value="Some College" />
+        <label for="edu2">Some College</label><br />
+        <input type="radio" id="edu3" name="education" value="Associate's Degree" />
+        <label for="edu3">Associate's Degree</label><br />
+        <input type="radio" id="edu4" name="education" value="Bachelor">
+        <label for="edu4">Bachelor's Degree</label>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>

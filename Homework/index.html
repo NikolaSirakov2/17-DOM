@@ -13,18 +13,24 @@
       }
 
       body {
-        background-color: rgb(78, 160, 161);
-        font-family: "Roboto";
+        background: linear-gradient(
+          45deg,
+          #fa8bff 0%,
+          #2bd2ff 52%,
+          #2bff88 90%
+        );
+        height: 1200px;
       }
 
       main {
+        font-family: "Roboto";
         position: relative;
         display: flex;
-        background-color: #eee;
+        background-color: whitesmoke;
         margin-left: 750px;
         margin-top: 40px;
         width: 500px;
-        height: 900px;
+        height: 1100px;
         justify-content: center;
         border: 0.5px;
         border-radius: 1%;
@@ -144,6 +150,41 @@
         border: none;
         outline: none;
         scroll-behavior: smooth;
+        background-color: #eee;
+      }
+
+      .message {
+        position: absolute;
+        top: 810px;
+        left: 35px;
+      }
+
+      .message p {
+        margin-top: 20px;
+        opacity: 40%;
+      }
+
+      .message textarea {
+        height: 10px;
+        width: 430px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #eee;
+        border-color: rgb(246, 236, 236);
+      }
+
+      .submit {
+        position: absolute;
+        top: 950px;
+        width: 250px;
+        height: 50px;
+        background: linear-gradient(90deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+        border: 2px;
+        border-radius: 20px;
+        color: #eee;
+        font-size: larger;
       }
     </style>
   </head>
@@ -212,6 +253,20 @@
           <option value="bissnes">Bissnes Offer</option>
         </select>
       </div>
+
+      <div class="message">
+        <h2>Message</h2>
+        <p>Enter a Message</p>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="1"
+          value="Enter a Message"
+        ></textarea>
+      </div>
+
+      <button class="submit">Submit</button>
     </main>
   </body>
 </html>

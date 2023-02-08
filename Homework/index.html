@@ -84,6 +84,49 @@
         position: relative;
         top: 10px;
       }
+
+      .education {
+        position: absolute;
+        top: 500px;
+        left: 30px;
+      }
+
+      .education h2 {
+        font-weight: 700;
+      }
+
+      .education input {
+        position: relative;
+        right: 2px;
+        top: 10px;
+      }
+
+      .education label {
+        position: relative;
+        top: 10px;
+      }
+
+      .date {
+        position: absolute;
+        top: 640px;
+        left: 35px;
+      }
+
+      .date h2 {
+        font-weight: 999px;
+        padding-bottom: 10px;
+      }
+
+      .date input {
+        height: 30px;
+        width: 430px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #eee;
+        border-color: rgb(246, 236, 236);
+      }
     </style>
   </head>
   <body>
@@ -125,6 +168,11 @@
         <label for="edu3">Associate's Degree</label><br />
         <input type="radio" id="edu4" name="education" value="Bachelor">
         <label for="edu4">Bachelor's Degree</label>
+      </div>
+
+      <div class="date">
+            <h2>Appointment Date</h2>
+            <input type="date" name="calendar" id="calendar">
       </div>
     </main>
   </body>

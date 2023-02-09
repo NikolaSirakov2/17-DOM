@@ -15,6 +15,11 @@
       
         body {
             font-family: "Robo";
+            font-size: 10px;
+        }
+
+        input {
+            font-size: 9px;
         }
 
     </style>
@@ -51,7 +56,8 @@
         let enterFullName = document.createElement("input");
         form.appendChild(enterFullName);
         enterFullName.value = "Enter Your Full Name";
-        enterFullName.style.width = "530px";
+        
+        enterFullName.style.width = "430px";
         enterFullName.style.margin = "0px 80px";
         enterFullName.style.borderTopStyle = "hidden";
         enterFullName.style.borderRightStyle = "hidden";
@@ -68,7 +74,7 @@
         let enterEmail = document.createElement("input");
         form.appendChild(enterEmail);
         enterEmail.value = "Enter Your Email";
-        enterEmail.style.width = "530px";
+        enterEmail.style.width = "430px";
         enterEmail.style.margin = "0px 80px";
         enterEmail.style.borderTopStyle = "hidden";
         enterEmail.style.borderRightStyle = "hidden";
@@ -85,7 +91,7 @@
         let enterPhone = document.createElement("input");
         form.appendChild(enterPhone);
         enterPhone.value = "Enter Your Phone Number";
-        enterPhone.style.width = "530px";
+        enterPhone.style.width = "430px";
         enterPhone.style.margin = "0px 80px";
         enterPhone.style.borderTopStyle = "hidden";
         enterPhone.style.borderRightStyle = "hidden";
@@ -99,7 +105,111 @@
         age.innerText = "Age";
         age.style.marginLeft = "80px";
 
-        
+        // let ageList = document.createElement("ul");
+        // form.appendChild(ageList);
+        // ageList.style.marginRight = "100px"
+
+        let underEightteen = document.createElement("input");
+        form.appendChild(underEightteen);
+        underEightteen.type = "radio";
+        underEightteen.style.marginLeft = "85px";
+
+        let underEightteenLabel = document.createElement("label");
+        form.appendChild(underEightteenLabel);
+        underEightteenLabel.innerText = " < 18"
+
+        let middleAge = document.createElement("input");
+        form.appendChild(middleAge);
+        middleAge.type = "radio";
+        middleAge.style.marginLeft = "35px";
+
+        let middleAgeLabel = document.createElement("label");
+        form.appendChild(middleAgeLabel);
+        middleAgeLabel.innerText = " 18 - 35"
+
+        let overThitryFive = document.createElement("input");
+        form.appendChild(overThitryFive);
+        overThitryFive.type = "radio";
+        overThitryFive.style.marginLeft = "35px";
+
+        let overThitryFiveLabel = document.createElement("label");
+        form.appendChild(overThitryFiveLabel);
+        overThitryFiveLabel.innerText = " 35+";
+
+
+        let education = document.createElement("h2");
+        form.appendChild(education);
+        education.innerText = "Education";
+        education.style.marginLeft = "80px";
+
+        let highScholl = document.createElement("input");
+        form.appendChild(highScholl);
+        highScholl.type = "checkbox";
+        highScholl.style.marginLeft = "80px";
+
+        let highSchollLabel = document.createElement("label");
+        form.appendChild(highSchollLabel);
+        highSchollLabel.innerText = " High School";
+
+        let someCollege = document.createElement("input");
+        form.appendChild(someCollege);
+        someCollege.type = "checkbox";
+        someCollege.style.marginLeft = "50px";
+
+        let someCollegeLabel = document.createElement("label");
+        form.appendChild(someCollegeLabel);
+        someCollegeLabel.innerText = " Some College";
+
+        let assocDegree = document.createElement("input");
+        form.appendChild(assocDegree);
+        assocDegree.type = "checkbox";
+        assocDegree.style.marginLeft = "50px";
+
+        let assocDegreeLabel = document.createElement("label");
+        form.appendChild(assocDegreeLabel);
+        assocDegreeLabel.innerText = " Associate's Degree";
+
+        let bachelorsDegree = document.createElement("input");
+        form.appendChild(bachelorsDegree);
+        bachelorsDegree.type = "checkbox";
+        bachelorsDegree.style.marginLeft = "50px";
+
+        let bachelorsDegreeLabel = document.createElement("label");
+        form.appendChild(bachelorsDegreeLabel);
+        bachelorsDegreeLabel.innerText = " Bachelor's Degree";
+
+        let appointmentDate = document.createElement("h2");
+        form.appendChild(appointmentDate);
+        appointmentDate.innerText = "Appointment Date";
+        appointmentDate.style.margin = "30px 80px";
+
+        let date = document.createElement("input");
+        form.appendChild(date);
+        date.type = "date";
+        date.style.width = "430px";
+        date.style.height = "10px"
+        date.style.margin = "0px 80px";
+        date.style.borderTopStyle = "hidden";
+        date.style.borderRightStyle = "hidden";
+        date.style.borderLeftStyle = "hidden";
+        date.style.borderBottomStyle = "groove";
+        date.style.backgroundColor = "#eee";
+        date.style.padding = "8px";
+
+        let reason = document.createElement("h2");
+        form.appendChild(reason);
+        reason.innerText = "Reason for Appointment";
+        reason.style.margin = "40px 80px";
+
+        let selectMenu = document.createElement("select")
+        form.appendChild(selectMenu);
+        selectMenu.style.marginLeft = "80px";
+
+        let selectOne = document.createElement("option");
+        selectMenu.appendChild(selectOne);
+        selectOne.value = "basic";
+        selectOne.innerText = "Select Your Reason"
+
     </script>
   </body>
 </html>

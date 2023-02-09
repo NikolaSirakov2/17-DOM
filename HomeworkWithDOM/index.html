@@ -226,7 +226,34 @@
         message.innerText = "Message";
         message.style.margin = "30px 80px";
 
-        
+        let enterMessage = document.createElement("p");
+        form.appendChild(enterMessage);
+        enterMessage.innerText = "Enter a Message";
+        enterMessage.style.margin = "30px 80px 0px 80px";
+        enterMessage.style.opacity = "40%";
+
+        let textarea = document.createElement("textarea");
+        form.appendChild(textarea);
+        textarea.cols = "30";
+        textarea.rows = "1";
+        textarea.style.height = "10px"
+        textarea.style.width = "430px";
+        textarea.style.marginLeft = "80px";
+        textarea.style.borderTopStyle = "hidden";
+        textarea.style.borderLeftStyle = "hidden";
+        textarea.style.borderRightStyle = "hidden";
+
+        let submitButton = document.createElement("button");
+        form.appendChild(submitButton);
+        submitButton.innerText = "Submit";
+        submitButton.style.margin = "70px 160px";
+        submitButton.style.height = "50px";
+        submitButton.style.width = "250px";
+        submitButton.style.background = "linear-gradient(90deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%)";
+        submitButton.style.border = "2px";
+        submitButton.style.borderRadius = "20px";
+        submitButton.style.color = "white";
+        submitButton.style.fontSize = "x-large";
 
     </script>
   </body>

@@ -199,16 +199,34 @@
         let reason = document.createElement("h2");
         form.appendChild(reason);
         reason.innerText = "Reason for Appointment";
-        reason.style.margin = "40px 80px";
+        reason.style.margin = "30px 80px";
 
         let selectMenu = document.createElement("select")
         form.appendChild(selectMenu);
         selectMenu.style.marginLeft = "80px";
+        selectMenu.style.border = "none";
+        selectMenu.style.backgroundColor = "#eee";
+        selectMenu.style.width = "230px";
+        selectMenu.style.height = "30px"
 
         let selectOne = document.createElement("option");
         selectMenu.appendChild(selectOne);
-        selectOne.value = "basic";
-        selectOne.innerText = "Select Your Reason"
+        selectOne.innerText = "Select Your Reason";
+        
+        let selectTwo = document.createElement("option");
+        selectMenu.appendChild(selectTwo);
+        selectTwo.innerText = "Looking for job";
+        
+        let selectThree = document.createElement("option");
+        selectMenu.appendChild(selectThree);
+        selectThree.innerText = "Bisness offer";
+
+        let message = document.createElement("h2");
+        form.appendChild(message);
+        message.innerText = "Message";
+        message.style.margin = "30px 80px";
+
+        
 
     </script>
   </body>

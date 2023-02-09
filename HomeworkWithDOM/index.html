@@ -1,36 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
+    <link rel="stylesheet" href="./index.css" />
     <title>Form DOM</title>
     <style>
-        body {
-            background: linear-gradient(
-          45deg,
-          #fa8bff 0%,
-          #2bd2ff 52%,
-          #2bff88 90%
-        );
+        @font-face {
+            font-family: "Robo";
+            src: url(../Homework/font/RobotoRegular-3m4L.ttf);
         }
+      
+        body {
+            font-family: "Robo";
+        }
+
     </style>
-</head>
-<body>
-
-
-
-
-
-
-
-
-
+  </head>
+  <body>
     <script>
+        let form = document.createElement("main");
+        document.body.appendChild(form);
 
+        document.body.style.display = "flex";
+        document.body.style.justifyContent = "center";
+
+        form.style.height = "100vh";
+        form.style.width = "30%";
+        form.style.margin = "40px 40px 100px 40px"
+        form.style.backgroundColor = "white";
+        form.style.border = "0.5px";
+        form.style.borderRadius = "1%";
+        
+
+        let header = document.createElement("h1");
+        form.appendChild(header);
+        header.innerText = "Test Form";
+        header.style.display = "flex";
+        header.style.justifyContent = "center";
+        header.style.padding = "30px";
+
+        let fullName = document.createElement("h2");
+        form.appendChild(fullName);
+        fullName.innerText = "Full Name";
+        fullName.style.display = "flex";
+        fullName.style.marginLeft = "80px"
+
+        let enterFullName = document.createElement("input");
+        form.appendChild(enterFullName);
+        enterFullName.value = "Enter Your Full Name";
+        enterFullName.style.width = "530px";
+        enterFullName.style.margin = "0px 80px";
+        enterFullName.style.borderTopStyle = "hidden";
+        enterFullName.style.borderRightStyle = "hidden";
+        enterFullName.style.borderLeftStyle = "hidden";
+        enterFullName.style.borderBottomStyle = "groove";
+        enterFullName.style.backgroundColor = "#eee";
+        enterFullName.style.padding = "8px";
+
+        let email = document.createElement("h2");
+        form.appendChild(email);
+        email.innerText = "Email";
+        email.style.marginLeft = "80px";
+
+        let enterEmail = document.createElement("input");
+        form.appendChild(enterEmail);
+        enterEmail.value = "Enter Your Email";
+        enterEmail.style.width = "530px";
+        enterEmail.style.margin = "0px 80px";
+        enterEmail.style.borderTopStyle = "hidden";
+        enterEmail.style.borderRightStyle = "hidden";
+        enterEmail.style.borderLeftStyle = "hidden";
+        enterEmail.style.borderBottomStyle = "groove";
+        enterEmail.style.backgroundColor = "#eee";
+        enterEmail.style.padding = "8px";
+
+        let phone = document.createElement("h2");
+        form.appendChild(phone);
+        phone.innerText = "Phone Number";
+        phone.style.marginLeft = "80px";
+
+        let enterPhone = document.createElement("input");
+        form.appendChild(enterPhone);
+        enterPhone.value = "Enter Your Phone Number";
+        enterPhone.style.width = "530px";
+        enterPhone.style.margin = "0px 80px";
+        enterPhone.style.borderTopStyle = "hidden";
+        enterPhone.style.borderRightStyle = "hidden";
+        enterPhone.style.borderLeftStyle = "hidden";
+        enterPhone.style.borderBottomStyle = "groove";
+        enterPhone.style.backgroundColor = "#eee";
+        enterPhone.style.padding = "8px";
+
+        let age = document.createElement("h2");
+        form.appendChild(age);
+        age.innerText = "Age";
+        age.style.marginLeft = "80px";
+
+        
     </script>
-    
-</body>
+  </body>
 </html>

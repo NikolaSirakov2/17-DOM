@@ -32,7 +32,8 @@
         document.body.style.display = "flex";
         document.body.style.justifyContent = "center";
 
-        form.style.height = "100vh";
+        
+        form.style.height = "110vh";
         form.style.width = "30%";
         form.style.margin = "40px 40px 100px 40px"
         form.style.backgroundColor = "white";
@@ -193,17 +194,25 @@
         form.appendChild(assocDegreeLabel);
         assocDegreeLabel.innerText = " Associate's Degree";
         assocDegreeLabel.style.position = "relative";
-        assocDegreeLabel.style.top = "45px";
+        assocDegreeLabel.style.top = "43px";
         assocDegreeLabel.style.right = "253px";
 
         let bachelorsDegree = document.createElement("input");
         form.appendChild(bachelorsDegree);
         bachelorsDegree.type = "checkbox";
-        bachelorsDegree.style.marginLeft = "50px";
+        bachelorsDegree.style.marginLeft = "10px";
+        bachelorsDegree.style.position = "relative";
+        bachelorsDegree.style.top = "67px";
+        bachelorsDegree.style.right = "368px";
+        bachelorsDegree.style.marginBottom = "60px"
 
         let bachelorsDegreeLabel = document.createElement("label");
         form.appendChild(bachelorsDegreeLabel);
         bachelorsDegreeLabel.innerText = " Bachelor's Degree";
+        bachelorsDegreeLabel.style.position = "relative";
+        bachelorsDegreeLabel.style.top = "64px";
+        bachelorsDegreeLabel.style.right = "368px";
+        
 
         let appointmentDate = document.createElement("h2");
         form.appendChild(appointmentDate);

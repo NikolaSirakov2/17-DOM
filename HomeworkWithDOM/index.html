@@ -38,6 +38,7 @@
         form.style.backgroundColor = "white";
         form.style.border = "0.5px";
         form.style.borderRadius = "1%";
+        form.style.position = "relative";
         
 
         let header = document.createElement("h1");
@@ -105,14 +106,11 @@
         age.innerText = "Age";
         age.style.marginLeft = "80px";
 
-        // let ageList = document.createElement("ul");
-        // form.appendChild(ageList);
-        // ageList.style.marginRight = "100px"
-
         let underEightteen = document.createElement("input");
         form.appendChild(underEightteen);
         underEightteen.type = "radio";
         underEightteen.style.marginLeft = "85px";
+        underEightteen.style.position = "relative";
 
         let underEightteenLabel = document.createElement("label");
         form.appendChild(underEightteenLabel);
@@ -121,20 +119,37 @@
         let middleAge = document.createElement("input");
         form.appendChild(middleAge);
         middleAge.type = "radio";
+       
         middleAge.style.marginLeft = "35px";
+        middleAge.style.marginBottom = "20px"
+        middleAge.style.position = "relative";
+        middleAge.style.top = "20px";
+        middleAge.style.right = "73px"
+        
 
         let middleAgeLabel = document.createElement("label");
         form.appendChild(middleAgeLabel);
         middleAgeLabel.innerText = " 18 - 35"
+        middleAgeLabel.style.position = "relative";
+        middleAgeLabel.style.top = "18px";
+        middleAgeLabel.style.right = "73px"
+
 
         let overThitryFive = document.createElement("input");
         form.appendChild(overThitryFive);
         overThitryFive.type = "radio";
         overThitryFive.style.marginLeft = "35px";
+        overThitryFive.style.marginBottom = "50px"
+        overThitryFive.style.position = "relative";
+        overThitryFive.style.top = "40px";
+        overThitryFive.style.right = "158px"
 
         let overThitryFiveLabel = document.createElement("label");
         form.appendChild(overThitryFiveLabel);
         overThitryFiveLabel.innerText = " 35+";
+        overThitryFiveLabel.style.position = "relative";
+        overThitryFiveLabel.style.top = "38px";
+        overThitryFiveLabel.style.right = "158px"
 
 
         let education = document.createElement("h2");
@@ -155,19 +170,31 @@
         form.appendChild(someCollege);
         someCollege.type = "checkbox";
         someCollege.style.marginLeft = "50px";
+        someCollege.style.position = "relative";
+        someCollege.style.top = "25px";
+        someCollege.style.right = "123px";
 
         let someCollegeLabel = document.createElement("label");
         form.appendChild(someCollegeLabel);
         someCollegeLabel.innerText = " Some College";
+        someCollegeLabel.style.position = "relative";
+        someCollegeLabel.style.top = "23px";
+        someCollegeLabel.style.right = "123px";
 
         let assocDegree = document.createElement("input");
         form.appendChild(assocDegree);
         assocDegree.type = "checkbox";
         assocDegree.style.marginLeft = "50px";
+        assocDegree.style.position = "relative";
+        assocDegree.style.top = "47px";
+        assocDegree.style.right = "253px";
 
         let assocDegreeLabel = document.createElement("label");
         form.appendChild(assocDegreeLabel);
         assocDegreeLabel.innerText = " Associate's Degree";
+        assocDegreeLabel.style.position = "relative";
+        assocDegreeLabel.style.top = "45px";
+        assocDegreeLabel.style.right = "253px";
 
         let bachelorsDegree = document.createElement("input");
         form.appendChild(bachelorsDegree);

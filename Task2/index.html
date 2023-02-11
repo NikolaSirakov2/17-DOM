@@ -8,12 +8,13 @@
     <title>Task 2</title>
     <style>
         body {
-            background-color: rgb(222, 217, 217);
+            background-color: rgb(218, 222, 217);
             
             width: 100%;
             height: 100vh;
-            display: inline-block;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 
@@ -25,41 +26,63 @@
         document.body.appendChild(cardOne);
 
         cardOne.style.display = "flex";
-        cardOne.style.width = "30%";
+        cardOne.style.width = "20%";
         cardOne.style.height = "45%"
         cardOne.style.background = "coral";
         cardOne.style.alignItems = "center";
         cardOne.style.flexDirection = "column";
+        cardOne.style.margin = "2px 20px";
+        cardOne.style.justifyContent = "center";
         
         let watch = document.createElement("p");
         cardOne.appendChild(watch);
 
         watch.innerText = "GARNIER";
         watch.style.display = "flex";
-        watch.style.width = "50%";
-        watch.style.height = "20%";
-        watch.style.background = "white";
+        watch.style.width = "20%";
+        watch.style.height = "6%";
+        watch.style.background = "pink";
+        watch.style.textAlign = "center";
         
         let watchP = document.createElement("p");
         cardOne.appendChild(watchP);
         watchP.innerText = "Garnier Pure Active Micellar Cleansing Water, 125ml";
-        watchP.style.textAlign = "center"
+        watchP.style.textAlign = "center";
         watchP.style.display = "flex";
         watchP.style.fontSize = "small"
         watchP.style.width = "50%";
         watchP.style.height = "10%";
         watchP.style.background = "white";
+
+        let price = document.createElement("p");
+        cardOne.appendChild(price);
+        price.innerText = "$60";
+        price.style.color = "green";
+        price.style.display = "flex";
+        price.style.fontSize = "30px";
+
+        let cart = document.createElement("div");
+        cardOne.appendChild(cart);
+        cart.innerText = "ADD TO CART";
+        cart.style.background = "green";
+        cart.style.display = "flex";
+        cart.style.width = "100%";
+        cart.style.height = "15%";
+        cart.style.color = "white";
+        cart.style.alignItems = "center";
+        cart.style.justifyContent = "center";
         
 
         let cardTwo = document.createElement("div");
         document.body.appendChild(cardTwo);
 
         cardTwo.style.display = "flex";
-        cardTwo.style.width = "30%";
+        cardTwo.style.width = "20%";
         cardTwo.style.height = "45%"
         cardTwo.style.background = "blue";
         cardTwo.style.alignItems = "center";
         cardTwo.style.flexDirection = "column";
+        cardTwo.style.margin = "2px 20px"
 
         let shoes = document.createElement("p");
         cardTwo.appendChild(shoes);
@@ -79,7 +102,37 @@
         shoesP.style.width = "50%";
         shoesP.style.height = "10%";
         shoesP.style.background = "white";
-    
+
+
+        let cardThree = document.createElement("div");
+        document.body.appendChild(cardThree);
+
+        cardThree.style.display = "flex";
+        cardThree.style.width = "20%";
+        cardThree.style.height = "45%"
+        cardThree.style.background = "green";
+        cardThree.style.alignItems = "center";
+        cardThree.style.flexDirection = "column";
+        cardThree.style.margin = "2px 20px"
+
+        let tshirt = document.createElement("p");
+        cardThree.appendChild(tshirt);
+
+        tshirt.innerText = "GARNIER";
+        tshirt.style.display = "flex";
+        tshirt.style.width = "50%";
+        tshirt.style.height = "20%";
+        tshirt.style.background = "white";
+        
+        let tshirtP = document.createElement("p");
+        cardThree.appendChild(tshirtP);
+        tshirtP.innerText = "Garnier Pure Active Micellar Cleansing Water, 125ml";
+        tshirtP.style.textAlign = "center"
+        tshirtP.style.display = "flex";
+        tshirtP.style.fontSize = "small"
+        tshirtP.style.width = "50%";
+        tshirtP.style.height = "10%";
+        tshirtP.style.background = "white";
     </script>
     
 </body>

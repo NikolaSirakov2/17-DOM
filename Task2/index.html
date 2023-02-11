@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./reset.css">
     <title>Task 2</title>
     <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url(./font/RobotoRegular-3m4L.ttf);
+        }
         body {
             background-color: rgb(218, 222, 217);
             
@@ -27,16 +31,22 @@
 
         cardOne.style.display = "flex";
         cardOne.style.width = "20%";
-        cardOne.style.height = "45%"
+        cardOne.style.height = "55%"
         cardOne.style.background = "white";
         cardOne.style.alignItems = "center";
         cardOne.style.flexDirection = "column";
         cardOne.style.margin = "2px 20px";
         cardOne.style.justifyContent = "center";
+
+        let watchPic = document.createElement("img");
+        cardOne.appendChild(watchPic);
+        watchPic.src = "./images/watch.webp";
+        watchPic.style.display = "flex";
+        watchPic.style.height = "50%";
+        watchPic.style.width = "70%"
         
         let watch = document.createElement("p");
         cardOne.appendChild(watch);
-
         watch.innerText = "GARNIER";
         watch.style.display = "flex";
         watch.style.width = "20%";
@@ -46,7 +56,7 @@
         watch.style.background = "white";
         watch.style.textAlign = "center";
         watch.style.position = "relative";
-        watch.style.top = "90px";
+        watch.style.top = "30px";
         watch.style.right = "14px"
         
         let watchP = document.createElement("p");
@@ -59,7 +69,7 @@
         watchP.style.height = "10%";
         watchP.style.background = "white";
         watchP.style.position = "relative";
-        watchP.style.top = "100px"
+        watchP.style.top = "40px"
 
         let price = document.createElement("p");
         cardOne.appendChild(price);
@@ -68,7 +78,7 @@
         price.style.display = "flex";
         price.style.fontSize = "30px";
         price.style.position = "relative";
-        price.style.top = "100px"
+        price.style.top = "30px"
 
         let rating = document.createElement("img");
         cardOne.appendChild(rating);
@@ -76,7 +86,7 @@
         rating.style.display = "flex";
         rating.style.height = "10%";
         rating.style.position = "relative";
-        rating.style.top = "100px"
+        rating.style.top = "30px"
 
         let cart = document.createElement("div");
         cardOne.appendChild(cart);
@@ -84,12 +94,12 @@
         cart.style.background = "green";
         cart.style.display = "flex";
         cart.style.width = "100%";
-        cart.style.height = "15%";
+        cart.style.height = "12%";
         cart.style.color = "white";
         cart.style.alignItems = "center";
         cart.style.justifyContent = "center";
         cart.style.position = "relative";
-        cart.style.top = "114px"
+        cart.style.top = "20px"
         
 
         let cardTwo = document.createElement("div");

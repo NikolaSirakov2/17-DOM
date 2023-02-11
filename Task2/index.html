@@ -19,6 +19,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: "Roboto";
         }
     </style>
 
@@ -40,10 +41,10 @@
 
         let watchPic = document.createElement("img");
         cardOne.appendChild(watchPic);
-        watchPic.src = "./images/watch.webp";
+        watchPic.src = "./images/watch2.jpg";
         watchPic.style.display = "flex";
         watchPic.style.height = "50%";
-        watchPic.style.width = "70%"
+        watchPic.style.width = "70%";
         
         let watch = document.createElement("p");
         cardOne.appendChild(watch);
@@ -57,7 +58,8 @@
         watch.style.textAlign = "center";
         watch.style.position = "relative";
         watch.style.top = "30px";
-        watch.style.right = "14px"
+        watch.style.right = "16px";
+        watch.style.letterSpacing = "3px"
         
         let watchP = document.createElement("p");
         cardOne.appendChild(watchP);
@@ -91,7 +93,7 @@
         let cart = document.createElement("div");
         cardOne.appendChild(cart);
         cart.innerText = "ADD TO CART";
-        cart.style.background = "green";
+        cart.style.background = "lightseagreen";
         cart.style.display = "flex";
         cart.style.width = "100%";
         cart.style.height = "12%";
@@ -104,64 +106,154 @@
 
         let cardTwo = document.createElement("div");
         document.body.appendChild(cardTwo);
-
         cardTwo.style.display = "flex";
         cardTwo.style.width = "20%";
-        cardTwo.style.height = "45%"
-        cardTwo.style.background = "blue";
+        cardTwo.style.height = "55%"
+        cardTwo.style.background = "white";
         cardTwo.style.alignItems = "center";
         cardTwo.style.flexDirection = "column";
-        cardTwo.style.margin = "2px 20px"
+        cardTwo.style.margin = "2px 20px";
+        cardTwo.style.justifyContent = "center";
 
+        let shoesPic = document.createElement("img");
+        cardTwo.appendChild(shoesPic);
+        shoesPic.src = "./images/shoes.webp";
+        shoesPic.style.display = "flex";
+        shoesPic.style.height = "50%";
+        shoesPic.style.width = "70%";
+        
         let shoes = document.createElement("p");
         cardTwo.appendChild(shoes);
-
         shoes.innerText = "GARNIER";
         shoes.style.display = "flex";
-        shoes.style.width = "50%";
-        shoes.style.height = "20%";
+        shoes.style.width = "20%";
+        shoes.style.height = "6%";
+        shoes.style.fontSize = "22px"
+        shoes.style.fontWeight = "bolder"
         shoes.style.background = "white";
+        shoes.style.textAlign = "center";
+        shoes.style.position = "relative";
+        shoes.style.top = "30px";
+        shoes.style.right = "16px";
+        shoes.style.letterSpacing = "3px"
         
         let shoesP = document.createElement("p");
         cardTwo.appendChild(shoesP);
         shoesP.innerText = "Garnier Pure Active Micellar Cleansing Water, 125ml";
-        shoesP.style.textAlign = "center"
+        shoesP.style.textAlign = "center";
         shoesP.style.display = "flex";
         shoesP.style.fontSize = "small"
         shoesP.style.width = "50%";
         shoesP.style.height = "10%";
         shoesP.style.background = "white";
+        shoesP.style.position = "relative";
+        shoesP.style.top = "40px"
+
+        let priceS = document.createElement("p");
+        cardTwo.appendChild(priceS);
+        priceS.innerText = "$60";
+        priceS.style.color = "orangered";
+        priceS.style.display = "flex";
+        priceS.style.fontSize = "30px";
+        priceS.style.position = "relative";
+        priceS.style.top = "30px"
+
+        let ratingS = document.createElement("img");
+        cardTwo.appendChild(ratingS);
+        ratingS.src = "./images/stars.jpg";
+        ratingS.style.display = "flex";
+        ratingS.style.height = "10%";
+        ratingS.style.position = "relative";
+        ratingS.style.top = "30px"
+
+        let cartS = document.createElement("div");
+        cardTwo.appendChild(cartS);
+        cartS.innerText = "ADD TO CART";
+        cartS.style.background = "orangered";
+        cartS.style.display = "flex";
+        cartS.style.width = "100%";
+        cartS.style.height = "12%";
+        cartS.style.color = "white";
+        cartS.style.alignItems = "center";
+        cartS.style.justifyContent = "center";
+        cartS.style.position = "relative";
+        cartS.style.top = "20px"
 
 
         let cardThree = document.createElement("div");
         document.body.appendChild(cardThree);
-
         cardThree.style.display = "flex";
         cardThree.style.width = "20%";
-        cardThree.style.height = "45%"
-        cardThree.style.background = "green";
+        cardThree.style.height = "55%"
+        cardThree.style.background = "white";
         cardThree.style.alignItems = "center";
         cardThree.style.flexDirection = "column";
-        cardThree.style.margin = "2px 20px"
+        cardThree.style.margin = "2px 20px";
+        cardThree.style.justifyContent = "center";
 
+        let tshirtPic = document.createElement("img");
+        cardThree.appendChild(tshirtPic);
+        tshirtPic.src = "./images/tshirt.jpg";
+        tshirtPic.style.display = "flex";
+        tshirtPic.style.height = "50%";
+        tshirtPic.style.width = "70%";
+        
         let tshirt = document.createElement("p");
         cardThree.appendChild(tshirt);
-
         tshirt.innerText = "GARNIER";
         tshirt.style.display = "flex";
-        tshirt.style.width = "50%";
-        tshirt.style.height = "20%";
+        tshirt.style.width = "20%";
+        tshirt.style.height = "6%";
+        tshirt.style.fontSize = "22px"
+        tshirt.style.fontWeight = "bolder"
         tshirt.style.background = "white";
+        tshirt.style.textAlign = "center";
+        tshirt.style.position = "relative";
+        tshirt.style.top = "30px";
+        tshirt.style.right = "16px";
+        tshirt.style.letterSpacing = "3px"
         
         let tshirtP = document.createElement("p");
         cardThree.appendChild(tshirtP);
         tshirtP.innerText = "Garnier Pure Active Micellar Cleansing Water, 125ml";
-        tshirtP.style.textAlign = "center"
+        tshirtP.style.textAlign = "center";
         tshirtP.style.display = "flex";
         tshirtP.style.fontSize = "small"
         tshirtP.style.width = "50%";
         tshirtP.style.height = "10%";
         tshirtP.style.background = "white";
+        tshirtP.style.position = "relative";
+        tshirtP.style.top = "40px"
+
+        let priceT = document.createElement("p");
+        cardThree.appendChild(priceT);
+        priceT.innerText = "$15";
+        priceT.style.color = "orange";
+        priceT.style.display = "flex";
+        priceT.style.fontSize = "30px";
+        priceT.style.position = "relative";
+        priceT.style.top = "30px"
+
+        let ratingT = document.createElement("img");
+        cardThree.appendChild(ratingT);
+        ratingT.src = "./images/stars.jpg";
+        ratingT.style.display = "flex";
+        ratingT.style.height = "10%";
+        ratingT.style.position = "relative";
+        ratingT.style.top = "30px"
+
+        let cartT = document.createElement("div");
+        cardThree.appendChild(cartT);
+        cartT.innerText = "ADD TO CART";
+        cartT.style.background = "orange";
+        cartT.style.display = "flex";
+        cartT.style.width = "100%";
+        cartT.style.height = "12%";
+        cartT.style.color = "white";
+        cartT.style.alignItems = "center";
+        cartT.style.justifyContent = "center";
+        cartT.style.position = "relative";
+        cartT.style.top = "20px"
     </script>
     
 </body>

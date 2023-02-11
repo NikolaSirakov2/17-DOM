@@ -28,7 +28,7 @@
         cardOne.style.display = "flex";
         cardOne.style.width = "20%";
         cardOne.style.height = "45%"
-        cardOne.style.background = "coral";
+        cardOne.style.background = "white";
         cardOne.style.alignItems = "center";
         cardOne.style.flexDirection = "column";
         cardOne.style.margin = "2px 20px";
@@ -41,8 +41,13 @@
         watch.style.display = "flex";
         watch.style.width = "20%";
         watch.style.height = "6%";
-        watch.style.background = "pink";
+        watch.style.fontSize = "22px"
+        watch.style.fontWeight = "bolder"
+        watch.style.background = "white";
         watch.style.textAlign = "center";
+        watch.style.position = "relative";
+        watch.style.top = "90px";
+        watch.style.right = "14px"
         
         let watchP = document.createElement("p");
         cardOne.appendChild(watchP);
@@ -53,6 +58,8 @@
         watchP.style.width = "50%";
         watchP.style.height = "10%";
         watchP.style.background = "white";
+        watchP.style.position = "relative";
+        watchP.style.top = "100px"
 
         let price = document.createElement("p");
         cardOne.appendChild(price);
@@ -60,6 +67,16 @@
         price.style.color = "green";
         price.style.display = "flex";
         price.style.fontSize = "30px";
+        price.style.position = "relative";
+        price.style.top = "100px"
+
+        let rating = document.createElement("img");
+        cardOne.appendChild(rating);
+        rating.src = "./images/stars.jpg";
+        rating.style.display = "flex";
+        rating.style.height = "10%";
+        rating.style.position = "relative";
+        rating.style.top = "100px"
 
         let cart = document.createElement("div");
         cardOne.appendChild(cart);
@@ -71,6 +88,8 @@
         cart.style.color = "white";
         cart.style.alignItems = "center";
         cart.style.justifyContent = "center";
+        cart.style.position = "relative";
+        cart.style.top = "114px"
         
 
         let cardTwo = document.createElement("div");

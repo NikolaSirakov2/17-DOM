@@ -9,11 +9,11 @@
     <style>
         body {
             background-color: rgb(222, 217, 217);
-            display: flex;
+            
             width: 100%;
             height: 100vh;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
+            
         }
     </style>
 
@@ -21,22 +21,64 @@
 <body>
     <script>
 
-        let cards = document.createElement("div");
-        document.body.appendChild(cards);
+        let cardOne = document.createElement("div");
+        document.body.appendChild(cardOne);
 
-        cards.style.display = "flex";
-        cards.style.width = "80%";
-        cards.style.height = "65%"
-        cards.style.background = "coral";
+        cardOne.style.display = "flex";
+        cardOne.style.width = "30%";
+        cardOne.style.height = "45%"
+        cardOne.style.background = "coral";
+        cardOne.style.alignItems = "center";
+        cardOne.style.flexDirection = "column";
         
-        let watch = document.createElement("h3");
-        document.cards.appendChild(watch);
+        let watch = document.createElement("p");
+        cardOne.appendChild(watch);
 
+        watch.innerText = "GARNIER";
         watch.style.display = "flex";
-        watch.style.width = "30%";
-        watch.style.height = "100%";
-        watch.style.background = "blue";
-        watch.style.zIndex = "2";
+        watch.style.width = "50%";
+        watch.style.height = "20%";
+        watch.style.background = "white";
+        
+        let watchP = document.createElement("p");
+        cardOne.appendChild(watchP);
+        watchP.innerText = "Garnier Pure Active Micellar Cleansing Water, 125ml";
+        watchP.style.textAlign = "center"
+        watchP.style.display = "flex";
+        watchP.style.fontSize = "small"
+        watchP.style.width = "50%";
+        watchP.style.height = "10%";
+        watchP.style.background = "white";
+        
+
+        let cardTwo = document.createElement("div");
+        document.body.appendChild(cardTwo);
+
+        cardTwo.style.display = "flex";
+        cardTwo.style.width = "30%";
+        cardTwo.style.height = "45%"
+        cardTwo.style.background = "blue";
+        cardTwo.style.alignItems = "center";
+        cardTwo.style.flexDirection = "column";
+
+        let shoes = document.createElement("p");
+        cardTwo.appendChild(shoes);
+
+        shoes.innerText = "GARNIER";
+        shoes.style.display = "flex";
+        shoes.style.width = "50%";
+        shoes.style.height = "20%";
+        shoes.style.background = "white";
+        
+        let shoesP = document.createElement("p");
+        cardTwo.appendChild(shoesP);
+        shoesP.innerText = "Garnier Pure Active Micellar Cleansing Water, 125ml";
+        shoesP.style.textAlign = "center"
+        shoesP.style.display = "flex";
+        shoesP.style.fontSize = "small"
+        shoesP.style.width = "50%";
+        shoesP.style.height = "10%";
+        shoesP.style.background = "white";
     
     </script>
     
